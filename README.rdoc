@@ -77,7 +77,7 @@ Apparently there is a bug with apache / passenger for v2.1.X with sessions not w
 
 == Documentation explanation
 
-You can find anything you want about Authlogic in the {documentation}[http://authlogic.rubyforge.org], all that you need to do is understand the basic design behind it.
+You can find anything you want about Authlogic in the {documentation}[http://rdoc.info/projects/binarylogic/authlogic], all that you need to do is understand the basic design behind it.
 
 That being said, there are 2 models involved during authentication. Your Authlogic model and your ActiveRecord model:
 
@@ -86,7 +86,7 @@ That being said, there are 2 models involved during authentication. Your Authlog
 
 Each of the above has its various sub modules that contain common logic. The sub modules are responsible for including *everything* related to it: configuration, class methods, instance methods, etc.
 
-For example, if you want to timeout users after a certain period of inactivity, you would look in <b>Authlogic::Session::Timeout</b>. To help you out, I listed the following publicly relevant modules with short descriptions. For the sake of brevity, there are more modules than listed here, the ones not listed are more for internal use, but you can easily read up on them in the {documentation}[http://authlogic.rubyforge.org].
+For example, if you want to timeout users after a certain period of inactivity, you would look in <b>Authlogic::Session::Timeout</b>. To help you out, I listed the following publicly relevant modules with short descriptions. For the sake of brevity, there are more modules than listed here, the ones not listed are more for internal use, but you can easily read up on them in the {documentation}[http://rdoc.info/projects/binarylogic/authlogic].
 
 === Authlogic::ActsAsAuthentic sub modules
 
@@ -223,7 +223,7 @@ I think one of the best aspects of Authlogic is testing. For one, it cuts out <b
 
 For example, think about ActiveRecord. You don't test the internals of ActiveRecord, because the creators of ActiveRecord have already tested the internals for you. It wouldn't make sense for ActiveRecord to copy it's hundreds of tests into your applications. The same concept applies to Authlogic. You only need to test code you write that is specific to your application, just like everything else in your application.
 
-That being said, testing your code that uses Authlogic is easy. Since everyone uses different testing suites, I created a helpful module called Authlogic::TestCase, which is basically a set of tools for testing code using Authlogic. I explain testing Authlogic thoroughly in the {Authlogic::TestCase section of the documentation}[http://authlogic.rubyforge.org/classes/Authlogic/TestCase.html]. It should answer any questions you have in regards to testing Authlogic.
+That being said, testing your code that uses Authlogic is easy. Since everyone uses different testing suites, I created a helpful module called Authlogic::TestCase, which is basically a set of tools for testing code using Authlogic. I explain testing Authlogic thoroughly in the {Authlogic::TestCase section of the documentation}[http://rdoc.info/rdoc/binarylogic/authlogic/blob/72992b9effaea12f109465fc904fa5431538775a/Authlogic/TestCase.html]. It should answer any questions you have in regards to testing Authlogic.
 
 == Tell me quickly how Authlogic works
 
